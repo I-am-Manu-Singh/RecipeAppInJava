@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Recipes App</string>
+    <string name="welcomeText">Log in to your account using Email, social account or Create account</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="open">\n</string>
+    <string name="close" />
+</resources>

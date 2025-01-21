@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#4DE2B5B5"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout6"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPassword"
+                android:hint="Confirm Password"
+                android:paddingStart="12dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outline"
+                android:layout_height="70dp"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout9">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordRegister"
+                android:hint="Create Password"
+                android:paddingStart="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_outline"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailRegister"
+                android:hint="Enter Email"
+                android:paddingStart="12dp"
+                android:background="@drawable/shape_outline"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:inputType="text"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintEnd_toEndOf="@+id/tvAccounttitle"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout3"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout3">
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvAccounttitle"
+            style="@style/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="Create New Account"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout4"
+            app:layout_constraintStart_toStartOf="@+id/tvAccounttitle"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerbtn"
+            style="@style/btSolid"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Register"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout9"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout8"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
+
+        <TextView
+            android:layout_marginTop="22dp"
+            android:id="@+id/tvAlreadyAc1"
+            style="@style/tvSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="22dp"
+            android:text="Already have an Account ?"
+            app:layout_constraintEnd_toStartOf="@+id/tvAlreadyAc2"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/registerbtn"
+            app:layout_constraintTop_toBottomOf="@+id/registerbtn"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/loginLink"
+            style="@style/tvSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="Login"
+            android:textColor="@color/c10"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAlreadyAc1"
+            app:layout_constraintStart_toEndOf="@+id/tvAlreadyAc1"
+            app:layout_constraintTop_toTopOf="@+id/tvAlreadyAc1"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/tvSmall"
+            android:layout_width="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Looks like you don't have an account\nor connect with social accounts"
+            app:layout_constraintEnd_toEndOf="@+id/tvAccounttitle"
+            app:layout_constraintStart_toStartOf="@+id/tvAccounttitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvAccounttitle" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout8"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout8"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout9"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout9">
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

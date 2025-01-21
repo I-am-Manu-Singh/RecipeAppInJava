@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "231939726724",
+    "firebase_url": "https://fbloginauthapp-default-rtdb.firebaseio.com",
+    "project_id": "fbloginauthapp",
+    "storage_bucket": "fbloginauthapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231939726724:android:42d4e2d858f3472d1351d1",
+        "android_client_info": {
+          "package_name": "com.neatroots.FBLoginAuthApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj5xxnfD0tkBnP8G9abx_H5eLBLOqoVTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

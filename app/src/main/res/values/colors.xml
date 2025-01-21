@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pink">#E91E63</color>
+    <color name="red">#ED2617</color>
+    //app ui colors
+    <color name="c10">#E45D5D</color>
+    <color name="c60">#4DE13F3F</color>
+    <color name="c30">#F36B6B</color>
+    <color name="gray">#FFFFFF</color>
+    <color name="semi_transparent">#20000000</color>
+    <color name="ltGrayColor">#FFFFFF</color>
+    <color name="lite_gy">#FFFFFF</color>
+    <color name="dgray">#FFFFFF</color>
+    <color name="green">#F44336</color>
+</resources>

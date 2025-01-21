@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#B03131"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btNavDrawer"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_solid"
+            android:backgroundTint="@color/c30"
+            android:padding="10dp"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Hello User,"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/btNavDrawer"
+            app:layout_constraintTop_toTopOf="@+id/btNavDrawer" />
+
+        <TextView
+            android:id="@+id/showemail"
+            style="@style/tvSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".50"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvUserName"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_search"
+            app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btNavDrawer"
+            app:layout_constraintTop_toBottomOf="@+id/showemail"
+            app:queryHint="Search Here.." />
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/shape_outline2"
+            android:gravity="center"
+            android:text="Sign Out"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btNavDrawer"
+            app:layout_constraintEnd_toStartOf="@+id/delete"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toEndOf="@+id/tvUserName"
+            app:layout_constraintTop_toTopOf="@+id/btNavDrawer"
+            app:layout_constraintVertical_bias="0.45"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/shape_outline2"
+            android:gravity="center"
+            android:text="Delete A/c"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btNavDrawer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btNavDrawer"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="This is Profile Fragement"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
